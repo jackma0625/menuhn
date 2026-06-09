@@ -1,0 +1,242 @@
+
+body {
+  background: #140c08;
+}
+
+/* HERO */
+
+.chinese-hero {
+
+  height: 72vh;
+
+  background:
+    url('/images/chinese-hero.jpg')
+    center/cover;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.82)
+    );
+}
+
+.hero-content {
+
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 700px;
+
+  padding: 20px;
+}
+
+.subtitle {
+
+  color: #fbbf24;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 16px;
+
+  font-weight: bold;
+}
+
+.hero-content h1 {
+
+  font-size: 72px;
+
+  margin: 0 0 20px;
+
+  color: white;
+}
+
+.description {
+
+  color: #ddd;
+
+  font-size: 20px;
+
+  margin-bottom: 40px;
+}
+
+/* MENU */
+
+.menu-section {
+
+  padding: 80px 20px;
+}
+
+.menu-section h2 {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  margin-bottom: 50px;
+
+  color: white;
+}
+
+.menu-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 24px;
+}
+
+.menu-card {
+
+  background: #21120d;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  transition: 0.35s;
+}
+
+.menu-card:hover {
+
+  transform: translateY(-6px);
+
+  border-color:
+    rgba(255,255,255,0.15);
+}
+
+.menu-card img {
+
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+}
+
+.menu-info {
+
+  padding: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.menu-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+.menu-top h4 {
+
+  margin: 0;
+
+  font-size: 24px;
+
+  color: white;
+}
+
+.menu-top span {
+
+  color: #fbbf24;
+
+  font-weight: bold;
+
+  font-size: 18px;
+}
+
+.menu-info p {
+
+  color: #bbb;
+
+  line-height: 1.6;
+}
+
+.order-btn {
+
+  margin-top: 10px;
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #b91c1c;
+
+  color: white;
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+
+  background: #991b1b;
+
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero-content h1 {
+
+    font-size: 44px;
+  }
+
+  .description {
+
+    font-size: 16px;
+  }
+
+  .menu-section h2 {
+
+    font-size: 32px;
+  }
+
+  .chinese-hero {
+
+    height: 60vh;
+  }
+
+}
