@@ -1,4 +1,4 @@
-```js
+
 export const chineseMenu = [
 
   {
@@ -50,4 +50,4 @@ export const chineseMenu = [
   }
 
 ]
-```
+
